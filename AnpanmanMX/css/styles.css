@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: transparent;
+    justify-content: flex-end;
+    margin: 0;
+    padding:0;
+}
+ul li{
+    list-style: none;
+    padding: 10px;
+    transition: background-color 0.5s,
+                color 0.5s;
+}
+li a{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color:#f49cb2;
+}
+ul li:hover{
+    background-color: #f6d3d7;
+}
+ul li:hover a {
+    color: #fff;
+}
+
+.carousel {
+    height: 50vh;
+}
