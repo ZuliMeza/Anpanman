@@ -22,60 +22,73 @@
     <meta property="og:site_name" content="ANPANMAN STORE MX">
 
 
-
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/vnd.microsoft.icon">
     <link rel="stylesheet" href="css/styles.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</head>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    </head>
 <body>
     <header>
-      <!-- <img src="https://static.wixstatic.com/media/c77d40_fe77630fd5d74cfaba09ca1a99076ab1~mv2.png/v1/fill/w_75,h_75,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/48117B60-BB9A-4733-BD01-92989078C6EA%202_PNG.png" alt=""> -->
-    </header>
-    <nav>
-        
-        <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Ugly Sweaters</a></li>
-        <li><a href="#">Promos</a></li>
-        <li><a href="#">BIAS BOX</a></li>
-        <li><a href="#">BOX TXT</a></li>
-        <li><a href="#">CATÁLOGO</a></li>
-        <li><a href="#">BTS</a></li>
-        <li><a href="#">BP</a></li>
-        <li><a href="#">Harry Styles</a></li>
-        <li><a href="#">Stray Kidz</a></li>
-        <li><a href="#">More</a></li>
+      <h1>ANPANMAN STORE MX</h1>
+      <nav>
+        <ul class="navtab">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Ugly Sweaters</a></li>
+          <li><a href="#">Promos</a></li>
+          <li><a href="#">BIAS BOX</a></li>
+          <li><a href="#">BOX TXT</a></li>
+          <li><a href="#">CATÁLOGO</a></li>
+          <li><a href="#">BTS</a></li>
+          <li><a href="#">BP</a></li>
+          <li><a href="#">Harry Styles</a></li>
+          <li><a href="#">Stray Kidz</a></li>
+          <li><a href="#">More</a></li>
         </ul>
     </nav>
-  <main>
-    <h1>ANPANMAN STORE MX</h1>
-    <!-- <article>
-      <h2>Promos</h2>
-      <p>Ordena ya</p>
-    </article>
-    <article>
-      <h2>Ugly Sweaters</h2>
-      <p>Ordena ya</p>
-    </article> -->
-    <div class="slider-container">  
-      <img
-        class="slider-item"
-        src="img/logo.jpg"/>
-      <img
-        class="slider-item"
-        src="https://images.unsplash.com/photo-1580501170888-80668882ca0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-      />
-      <img
-        class="slider-item"
-        src="https://images.unsplash.com/photo-1572508589584-94d778209dd9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-      />
-    </div> 
+
+    </header>
     
+  <main>
+    
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="image-container">
+            <img loading="lazy" src="img/cobija.png" alt="">
+            <div class="overlay-text">
+                <div class="title" data-swiper-parallax="-300">Slide 1</div>
+                <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+            </div>
+        </div>
+        </div>
+        <div class="swiper-slide"><img loading="lazy" src="img/frazada.png" alt=""></div>
+        <div class="swiper-slide"><img loading="lazy" src="img/lienzo.png" alt=""></div>
+        <div class="swiper-slide"><img loading="lazy" src="img/minicuadros.png" alt=""></div>
+        <div class="swiper-slide"><img loading="lazy" src="img/playera.png" alt=""></div>
+        
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
   </main>
   <footer>
   <p>Copyright ANPANMAN STORE MX</p>
   </footer>
-  <script src=""></script>
+  <script src="js/index.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script> -->
   </body>
 </html>

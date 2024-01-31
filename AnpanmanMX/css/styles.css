@@ -4,8 +4,21 @@ body{
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
 
-ul{
+header h1{
+  margin:0;
+  color: #000;
+  text-align: center;
+  padding-left: 15px;
+  font-size: 19px;
+}
+
+.navtab{
     position: relative;
     display: flex;
     flex-flow: row wrap;
@@ -13,26 +26,69 @@ ul{
     justify-content: flex-end;
     margin: 0;
     padding:0;
+    
 }
-ul li{
+.navtab li{
     list-style: none;
     padding: 10px;
+    border-radius: 20%;
     transition: background-color 0.5s,
                 color 0.5s;
 }
-li a{
+.navtab a{
     display: inline-block;
     text-decoration: none;
     text-align: center;
     color:#f49cb2;
 }
-ul li:hover{
+.navtab li:hover{
     background-color: #f6d3d7;
+    border-radius: 20%;
 }
-ul li:hover a {
+.navtab li:hover a {
     color: #fff;
 }
+.swiper {
+  width: 100%;
+  max-width: 1600px;
+}
 
-.carousel {
-    height: 50vh;
+.swiper img{
+  height: 460px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Color del texto */
+}
+
+.title, .subtitle {
+  font-size: 24px; /* Tamaño del texto */
+  text-align: center;
+  /* Otras propiedades de estilo según tus preferencias */
+}
+
+@media (min-width: 1024px) {
+  .swiper img{
+    height: 500px;
+  }
 }
